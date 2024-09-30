@@ -124,10 +124,37 @@ class Cli {
           parseInt(answers.topSpeed),
           []
         );
+        const truck = new Truck(
+          // TODO: The generateVin method is static and should be called using the class name Cli, make sure to use Cli.generateVin() for creating a truck and motorbike as well!
+          Cli.generateVin(),
+          answers.color,
+          answers.make,
+          answers.model,
+          parseInt(answers.year),
+          parseInt(answers.weight),
+          parseInt(answers.topSpeed),
+          [],
+          parseInt(answers.towingCapacity)
+        );
+        const motorbike = new Motorbike(
+          // TODO: The generateVin method is static and should be called using the class name Cli, make sure to use Cli.generateVin() for creating a truck and motorbike as well!
+          Cli.generateVin(),
+          answers.color,
+          answers.make,
+          answers.model,
+          parseInt(answers.year),
+          parseInt(answers.weight),
+          parseInt(answers.topSpeed),
+          []
+        );
         // push the car to the vehicles array
         this.vehicles.push(car);
+        this.vehicles.push(truck);
+        this.vehicles.push(motorbike);
         // set the selectedVehicleVin to the vin of the car
         this.selectedVehicleVin = car.vin;
+        this.selectedVehicleVin = truck.vin;
+        this.selectedVehicleVin = motorbike.vin;
         // perform actions on the car
         this.performActions();
       });
