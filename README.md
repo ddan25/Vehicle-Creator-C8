@@ -130,3 +130,7 @@ You are required to submit the following for review:
 
 ---
 &copy; 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+GitHub Repository: https://github.com/ddan25/Vehicle-Creator-C8
+
+Video Submission: https://drive.google.com/file/d/1dkvPR7RIe-FD9x3DVSYEbDuthjqFqNFD/view

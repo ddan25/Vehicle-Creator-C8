@@ -399,8 +399,6 @@ class Cli {
                   if (this.vehicles[i] instanceof Truck) { // Check if it's a truck
                     this.findVehicleToTow(this.vehicles[i] as Truck); // Call the tow method
                     return; // Avoid calling performActions again
-                } else {
-                    console.log('Selected vehicle is not a truck, cannot tow.');
                 }
             }
           }
@@ -416,8 +414,6 @@ class Cli {
                 const selectedMotorbike = this.vehicles[i] as Motorbike;
                 selectedMotorbike.wheelie(); // Call the tow method
                 return; // Avoid calling performActions again
-            } else {
-                console.log('Selected vehicle is not a truck, cannot tow.');
             }
         }
       }
